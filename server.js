@@ -19,6 +19,7 @@ app.get('/api', (req, res) => {
         github_file_url: 'https://github.com/Gentle-wave/HNG_task_1/blob/tobi/server.js',
         github_repo_url: 'https://github.com/Gentle-wave/HNG_task_1',
         status_code: 200,
+        message : "sucessful"
       };
   
       res.json(response);
