@@ -9,7 +9,15 @@ app.get('/api', (req, res) => {
       const { slack_name, track } = req.query;
   
       const currentDate = new Date();
-      const currentUTC = currentDate.toISOString();
+      const year = currentDate.getUTCFullYear();
+      const month = (currentDate.getUTCMonth() + 1).toString().padStart(2, '0');
+      const day = currentDate.getUTCDate().toString().padStart(2, '0');
+      const hours = currentDate.getUTCHours().toString().padStart(2, '0');
+      const minutes = currentDate.getUTCMinutes().toString().padStart(2, '0');
+      const seconds = currentDate.getUTCSeconds().toString().padStart(2, '0');
+  
+      // Create the formatted UTC time string
+      const currentUTC = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}Z`
   
       const response = {
         slack_name,
