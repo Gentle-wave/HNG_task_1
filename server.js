@@ -16,7 +16,7 @@ app.get('/api', (req, res) => {
         current_day: currentDate.toLocaleDateString('en-US', { weekday: 'long' }),
         utc_time: currentUTC,
         track,
-        github_file_url: 'https://github.com/username/repo/blob/main/file_name.ext',
+        github_file_url: 'https://github.com/Gentle-wave/HNG_task_1/blob/tobi/server.js',
         github_repo_url: 'https://github.com/Gentle-wave/HNG_task_1',
         status_code: 200,
       };
