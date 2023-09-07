@@ -4,13 +4,12 @@
     "express": "^4.18.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "name": "hng_task_1",
   "version": "1.0.0",
   "description": "first api endpoint hng task",
-  "main": "server.js",
-  "devDependencies": {},
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gentle-wave/HNG_task_1.git"
